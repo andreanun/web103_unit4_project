@@ -1,4 +1,4 @@
-import "./dotenv.js";
+import "../dotenv.js";
 import { pool } from "./database.js";
 import { cars } from "../data/cars.js";
 
