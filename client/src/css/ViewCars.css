@@ -1,0 +1,115 @@
+/* === ViewCars page === */
+
+.view-cars {
+  padding: 2.5rem 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #f2f2f2;
+}
+
+.view-cars h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.75rem;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.view-cars h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.75rem;
+  color: #ffffff;
+}
+
+.error-message {
+  background: #2a0f0f;
+  border: 1px solid #7a1f1f;
+  color: #ff9b9b;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.car-card {
+  background: rgba(15, 15, 15, 0.78);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 1.25rem 1.25rem 1.5rem;
+  transition:
+    border-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.car-card:hover {
+  border-color: #8a1c1c;
+  transform: translateY(-2px);
+}
+
+.car-card a {
+  text-decoration: none;
+}
+
+.car-card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.75rem;
+}
+
+.car-card h2:hover {
+  color: #e23c3c;
+}
+
+.car-card p {
+  font-size: 0.9rem;
+  color: #b8b8b8;
+  margin: 0.2rem 0;
+}
+
+.car-price {
+  display: inline-block;
+  background: #6e1414;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  margin-top: 0.75rem;
+}
+
+.car-card-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.car-card-actions button {
+  flex: 1;
+  background: #8a1c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.car-card-actions button:hover {
+  background: #b32a2a;
+}
+
+.car-card-actions a {
+  flex: 1;
+}
