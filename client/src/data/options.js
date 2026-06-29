@@ -29,19 +29,5 @@ export const interiorOptions = [
 ];
 
 // Roof options that are incompatible with convertible = true.
+// Used to produce the "impossible combo" error.
 export const NON_CONVERTIBLE_ROOFS = ["Hardtop", "Sunroof"];
-
-export const isImpossibleCombo = ({ convertible, roof }) => {
-  return convertible && NON_CONVERTIBLE_ROOFS.includes(roof);
-};
-
-export const calculatePrice = ({ exterior, roof, wheels, interior }) => {
-  const exteriorPrice =
-    exteriorOptions.find((o) => o.name === exterior)?.price ?? 0;
-  const roofPrice = roofOptions.find((o) => o.name === roof)?.price ?? 0;
-  const wheelsPrice = wheelOptions.find((o) => o.name === wheels)?.price ?? 0;
-  const interiorPrice =
-    interiorOptions.find((o) => o.name === interior)?.price ?? 0;
-
-  return BASE_PRICE + exteriorPrice + roofPrice + wheelsPrice + interiorPrice;
-};

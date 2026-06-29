@@ -5,9 +5,9 @@ import {
   roofOptions,
   wheelOptions,
   interiorOptions,
-  isImpossibleCombo,
-  calculatePrice,
 } from "../data/options";
+import { calculatePrice } from "../utilities/calcPrice";
+import { isImpossibleCombo } from "../utilities/validation";
 import { createCar } from "../services/CarsAPI";
 import "../css/CreateCar.css";
 
